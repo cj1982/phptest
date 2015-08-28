@@ -1,0 +1,33 @@
+How to run the demo code. Test was done using Zend 
+
+1. Create a vertual host as follow.
+
+<VirtualHost *:80>
+    ServerName exozet
+    DocumentRoot /var/www/projects/exozet/public
+ <Directory /var/www/projects/exozet/public>
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+2. Add a entry in your host file as follow. 
+yourip exozet
+
+3. Import database script in the 'data\db\exozet.sql' in to your mysql server. 
+
+4. Edit application\configs\application.ini
+edit following entires
+resources.multidb.default.adapter       = mysqli
+resources.multidb.default.host          = "127.0.0.1 or your IP"
+resources.multidb.default.username      = "your_username"
+resources.multidb.default.password      = "your_pass"
+resources.multidb.default.dbname        = "exozet"
+resources.multidb.default.default       = true
+
+
+5. open browser and type the url - http://exozet
+
+6. make sure you have given proper apache folder permission before you run it.

@@ -1,0 +1,10 @@
+<tr>
+	<td class="alt"><input type="checkbox" name="check"></td>
+	<td class="alt"><?=$this->article->name;?></td>
+	<td class="alt"><a href="#"><?=$this->article->text;?></a></td>
+	<td class="alt"><?=$this->article->email;?></td>
+	<td class="alt"><?=$this->article->created;?></td>
+	<td class="alt"> <a href="/index/edit/id/<?=$this->article->id;?>"><img alt="Stats"
+			src="/img/global/icons/edit.png"></a> <a href="/index/delete/id/<?=$this->article->id;?>"><img alt="Delete"
+			src="/img/global/icons/delete.png"></a></td>
+</tr>

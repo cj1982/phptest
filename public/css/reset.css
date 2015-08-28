@@ -1,0 +1,88 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, table, th, td, hr
+{
+margin: 0; padding: 0; border: 0; outline: none;
+}
+
+body
+{
+line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+font-size: 100%;
+font-weight: normal;
+}
+
+ul, ol
+{
+list-style: none;
+}
+
+a
+{
+color: black;
+text-decoration: none;
+}
+
+a:hover
+{
+text-decoration: underline;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	text-align: center;
+}
+
+/* adding custom style*/
+.tree ul{
+	padding-left:10px;
+}
+
+/*  pagination */
+.pagination a {
+margin:0 5px 0 0;
+padding:3px 6px;
+}
+
+.pagination {
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:10px;
+padding:20px 0 5px;
+text-align:right;
+}
+
+.pagination a.number {
+border:1px solid #DDDDDD;
+}
+
+.pagination a.current {
+background:url("../images/bg-button-green.gif") repeat-x scroll left top #799A1D !important;
+border-color:#799A1D !important;
+color:#FFFFFF !important;
+}
+
+/* display the device count */
+.display_count{
+    color: #FBB117;
+    float: left;
+    font-size: 40px;
+}
+.display_count small{
+    font-size: 12px;
+}
+/* phone elements */
+.phone {
+    float: left;
+    /*text-align: center;*/
+    padding: 5px;
+}
+
+.phone_tbl td{
+    padding: 0px;
+}

@@ -1,0 +1,106 @@
+9
+
+dir
+11915
+http://www.nexva.com/svn/repo/v2/trunk/library/Nexva
+http://www.nexva.com/svn/repo
+
+
+
+2012-09-04T13:15:00.424940Z
+11905
+maheel
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+954fb6b5-daeb-42cd-9323-0570cc868170
+
+Affiliate
+dir
+
+Analytics
+dir
+
+Api
+dir
+
+Auth
+dir
+
+Badge
+dir
+
+Cache
+dir
+
+Captcha
+dir
+
+Controller
+dir
+
+Db
+dir
+
+DeviceDetection
+dir
+
+DynamicKeyGenerator
+dir
+
+Facebook
+dir
+
+Factory
+dir
+
+GeoData
+dir
+
+LanguageDetection
+dir
+
+LocationServices
+dir
+
+MailChimp
+dir
+
+Notifier
+dir
+
+PaymentGateway
+dir
+
+Plugin
+dir
+
+Product
+dir
+
+PromotionCode
+dir
+
+Recommendation
+dir
+
+Util
+dir
+
+View
+dir
+
+Whitelabel
+dir
+

@@ -1,0 +1,1575 @@
+
+@charset "utf-8";
+@import "reset.css";
+@import "fonts.css";
+
+html, body {
+    background: url("../images/bg.png") repeat scroll 0 0 #343d45;
+    color: #343d45;
+    font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.wrappage {
+	height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.container {
+	background: url("../images/main_bg.png") no-repeat;
+	margin: 0px auto;
+    width: 1152px;
+    height: 760px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.center {
+    text-align: center;
+}
+.divider {
+    background: url("../images/divider.png") no-repeat scroll 170px 70% transparent;
+    display: inline-block;
+    margin: 0;
+    min-height: 1px;
+    width: 100%;
+}
+.divider-s {
+    background: url("../images/divider.png") no-repeat scroll 130px 60% transparent;
+    display: inline-block;
+    margin: 0;
+    min-height: 1px;
+    width: 100%;
+}
+.no-float {
+    float: none;
+}
+a, img, button {
+    outline: medium none;
+}
+ul {
+    overflow: hidden;
+}
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner {
+    border: 0 none;
+}
+button:focus, input[type="reset"]:focus, input[type="button"]:focus, input[type="submit"]:focus {
+    border: 0 none;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 15px;
+    height: auto;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+}
+.image-left {
+    float: left;
+    margin: 5px 20px 10px 0;
+}
+.image-right {
+    float: right;
+    margin: 5px 0 10px 20px;
+}
+header {
+    height: 60px;
+    margin: 0 auto 30px 0;
+    width: 830px;
+}
+header h1 {
+    color: #657089;
+    font-family: 'QlassikBoldRegular';
+    font-size: 33px;
+    margin: 0;
+    text-shadow: 2px 2px 0 #B0B2B1;
+}
+header h1 span {
+    color: #FFFFFF;
+    font-family: 'QlassikBoldRegular';
+}
+header h5 {
+    color: #657089;
+    font-family: 'QlassikBoldRegular';
+    margin: 0;
+    text-shadow: 2px 2px 0 #FFFFFF;
+}
+a.vcard {
+    background: url("../images/vcard.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    width: 48px;
+}
+a.vcard:hover {
+    background-position: 0 -48px;
+}
+section {
+    background: url("../images/bg-section.png") repeat scroll 0 0 transparent;
+    border-radius: 10px 10px 10px 10px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 20px 20px 30px;
+    position: relative;
+    width: 790px;
+}
+section#about, section#resume, section#portfolio, section#contact {
+    display: none;
+}
+section#about a {
+    color: #D15600;
+}
+section#resume a {
+    color: #73880A;
+}
+section#portfolio a {
+    color: #3F4C6B;
+}
+section#contact a {
+    color: #D01F3C;
+}
+section.menu {
+    background: none repeat scroll 0 0 transparent;
+    height: 230px;
+    margin: 0 auto;
+    padding: 0;
+    width: 830px;
+}
+a.close {
+    background: url("../images/bg-close.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 64px;
+    position: absolute;
+    right: -32px;
+    top: 16px;
+    width: 32px;
+    z-index: 999;
+}
+.menu-cont {
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    width: 830px;
+}
+.menu-cont a {
+    color: #EFEFF1;
+    font-family: 'YanoneKaffeesatzLight';
+    font-size: 36px;
+    font-weight: 400;
+    height: 140px;
+    left: 0;
+    padding: 90px 0 0;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px 0 #657089;
+    top: 0;
+    width: 230px;
+    z-index: 4;
+}
+.menu-cont a span {
+    display: block;
+    height: 230px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 230px;
+    z-index: 5;
+}
+.menu-cont a.about {
+    background: url("../images/a-orange.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+    z-index: 4;
+}
+.menu-cont a.resume {
+    background: url("../images/a-olive.png") no-repeat scroll 0 0 transparent;
+    left: 200px;
+    z-index: 3;
+}
+.menu-cont a.portfolio {
+    background: url("../images/a-blue.png") no-repeat scroll 0 0 transparent;
+    left: 400px;
+    z-index: 2;
+}
+.menu-cont a.contact {
+    background: url("../images/a-crimson.png") no-repeat scroll 0 0 transparent;
+    left: 600px;
+    z-index: 1;
+}
+.menu-cont a:hover {
+    z-index: 100;
+}
+.block {
+    height: 350px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px 0 10px;
+    width: 760px;
+}
+.block-12 {
+    margin: 0 30px 0 0;
+    width: 362px;
+}
+.block-12.last {
+    margin: 0;
+}
+.block h1 {
+    font-family: 'YanoneKaffeesatzLight';
+    line-height: 35px;
+    margin: 0 0 20px;
+    text-shadow: 1px 1px 0 #D1D1D1;
+    text-transform: capitalize;
+}
+.block h1.about {
+    color: #D15600;
+}
+.block h1.resume {
+    color: #73880A;
+}
+.block h1.portfolio {
+    color: #3F4C6B;
+}
+.block h1.contact {
+    color: #D01F3C;
+}
+.block h3 {
+    color: #394C5E;
+    font-family: 'YanoneKaffeesatzLight';
+    font-weight: 400;
+    margin: 0 0 10px;
+    text-shadow: 1px 1px 0 #D1D1D1;
+}
+.block p {
+    font-family: 'YanoneKaffeesatzLight';
+    margin: 0 0 15px;
+}
+.jspVerticalBar {
+    background: none repeat scroll 0 0 transparent;
+    width: 10px;
+}
+.jspTrack {
+    background: none repeat scroll 0 0 #E5E9EA;
+    width: 1px;
+}
+.jspDrag {
+    background: none repeat scroll 0 0 #E5E9EA;
+    border-radius: 15px 15px 15px 15px;
+    left: -4px;
+    width: 10px;
+}
+ul.info {
+    margin: 5px 0 0;
+    width: 362px;
+}
+ul.info li {
+    font-family: 'YanoneKaffeesatzLight';
+    font-size: 15px;
+    line-height: 15px;
+    margin: 0 0 7px;
+}
+ul.info li.where {
+    font-size: 15px;
+    margin: 0 0 8px;
+    padding: 0;
+    width: 247px;
+}
+ul.info li.where span {
+    color: #D15600;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+ul.info li.where.progress {
+    margin: 0 0 3px;
+    padding: 0;
+    width: 100px;
+}
+ul.info li.where.progress span {
+    border: 1px solid #D9DCE1;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-family: 'QlassikBoldRegular';
+    font-size: 13px;
+    margin: 0;
+    padding: 1px 0;
+    text-align: center;
+}
+ul.info li.check {
+    background: url("../images/check.png") no-repeat scroll 0 1px transparent;
+    padding: 0 0 0 25px;
+    width: 337px;
+}
+ul.info li.check span {
+    color: #73880A;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+ul.info li.skills {
+    font-size: 15px;
+    margin: 0 0 7px;
+    padding: 0;
+    width: 182px;
+}
+ul.info li.skills span {
+    color: #73880A;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+ul.info li.skills.progress {
+    margin: 0 0 7px;
+    padding: 0;
+    width: 165px;
+}
+ul.info li.skills.progress span {
+    background: url("../images/skills.png") repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+}
+ul.info li.skills.progress span.p-100 {
+    width: 165px;
+}
+ul.info li.skills.progress span.p-70 {
+    width: 135px;
+}
+ul.info li.skills.progress span.p-50 {
+    width: 105px;
+}
+ul.info li.skills.progress span.p-30 {
+    width: 75px;
+}
+ul.portfolio {
+    margin: 10px 0 20px;
+    padding: 0;
+    width: 755px;
+}
+ul.portfolio li {
+    float: left;
+    height: 150px;
+    margin: 0 3px 3px 0;
+    width: 249px;
+}
+ul.portfolio li a {
+    display: block;
+    height: 150px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 249px;
+}
+ul.portfolio li a span {
+    background: url("../images/tr-png.png") repeat scroll 0 0 transparent;
+    bottom: 0;
+    color: #F8F8F8;
+    font-family: 'YanoneKaffeesatzLight';
+    font-size: 14px;
+    left: 0;
+    line-height: 1.2em;
+    padding: 10px;
+    position: absolute;
+    width: 249px;
+}
+ul.portfolio li.last {
+    margin-right: 0;
+}
+#style-form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.wrapper-block label {
+    color: #D01F3C;
+    display: block;
+    float: left;
+    font-family: 'YanoneKaffeesatzLight';
+    font-size: 17px;
+    padding: 0;
+    text-align: left;
+    width: 70px;
+}
+.small-label {
+    color: #394C5E;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 10px;
+    text-align: left;
+    width: 70px;
+}
+.wrapper-block [type="text"] {
+    border: 1px solid #D9DCE1;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 12px;
+    margin: 2px 0 20px 10px;
+    padding: 8px 4px;
+    width: 272px;
+}
+.wrapper-block textarea {
+    border: 1px solid #D9DCE1;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 12px;
+    margin: 2px 0 20px 10px;
+    overflow: hidden;
+    padding: 8px 4px;
+    width: 272px;
+}
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px #CADCE4;
+}
+a.btn-form, input.btn-form {
+    background: none repeat scroll 0 0 #657089;
+    border: 1px solid #657089;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'QlassikBoldRegular';
+    font-size: 14px;
+    margin: 0 0 5px 80px;
+    padding: 6px 20px;
+    width: 136px;
+}
+#form .error-input {
+    border-color: #D01F3C;
+}
+
+ul li .error {
+    color: red !important;
+}
+.sending {
+    bottom: 30px;
+    display: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+}
+.mess {
+    display: none;
+    padding: 40px 0;
+}
+.mess h5 {
+    font-weight: 400;
+    padding: 10px;
+}
+ul.contact {
+    margin: 0;
+}
+ul.contact li {
+    font-family: 'YanoneKaffeesatzLight';
+    font-size: 17px;
+    line-height: 19px;
+    margin: 0 0 5px;
+    padding: 0;
+}
+ul.contact li span {
+    font-size: 17px;
+}
+ul.contact li span a {
+    color: #657089;
+    font-weight: normal;
+}
+ul.contact li a.vcard {
+    background: url("../images/vcard.png") no-repeat scroll left top transparent;
+    height: 36px;
+    margin: 0 0 13px;
+    padding: 12px 0 0 70px;
+    width: 200px;
+}
+ul.contact li a.vcard:hover {
+    background-position: 0 -48px;
+}
+footer {
+    background: url("../images/footer-bg.png") no-repeat scroll center top transparent;
+    height: 50px;
+    margin: 40px auto 0;
+    padding: 10px 0 0;
+    width: 830px;
+}
+.tweets {
+    background: url("../images/tweets.png") no-repeat scroll 0 5px transparent;
+    color: #657089;
+    font-size: 12px;
+    height: 44px;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 5px 0 0 50px;
+    width: 550px;
+}
+.tweets a {
+    color: #657089;
+    font-style: italic;
+    font-weight: bold;
+}
+ul.socicon {
+    margin: 0;
+}
+ul.socicon li {
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+ul.socicon li a {
+    display: block;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    width: 32px;
+}
+ul.socicon li a.dribbble {
+    background: url("../images/dribbble.png") no-repeat scroll 0 0 transparent;
+}
+ul.socicon li a.facebook {
+    background: url("../images/facebook.png") no-repeat scroll 0 0 transparent;
+}
+ul.socicon li a.twitter {
+    background: url("../images/twitter.png") no-repeat scroll 0 0 transparent;
+}
+ul.socicon li a.flickr {
+    background: url("../images/flickr.png") no-repeat scroll 0 0 transparent;
+}
+ul.socicon li a.linkedin {
+    background: url("../images/linkedin.png") no-repeat scroll 0 0 transparent;
+}
+ul.socicon li a.vimeo {
+    background: url("../images/vimeo.png") no-repeat scroll 0 0 transparent;
+}
+ul.socicon li a.google {
+    background: url("../images/google.png") no-repeat scroll 0 0 transparent;
+}
+ul.socicon li a:hover {
+    background-position: 0 -32px;
+}
+ul.socicon li.last {
+    margin-right: 0;
+}
+.tipsy {
+    background-image: url("../images/tipsy.gif");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    padding: 5px;
+}
+.tipsy-inner {
+    background-color: #3F4C6B;
+    color: #F8F8F8;
+    font-size: 13px;
+    line-height: 1.3em;
+    max-width: 170px;
+    padding: 5px;
+    text-align: center;
+}
+.tipsy-inner {
+    border-radius: 3px 3px 3px 3px;
+}
+.tipsy-north {
+    background-position: center top;
+}
+.tipsy-south {
+    background-position: center bottom;
+}
+.tipsy-east {
+    background-position: right center;
+}
+.tipsy-west {
+    background-position: left center;
+}
+
+header {
+    height: 35px;
+    margin: 0 auto 20px 0;
+    width: 440px;
+}
+header h1 {
+    font-size: 24px;
+}
+header h5 {
+    font-size: 12px;
+}
+section {
+    height: 200px;
+    padding: 10px 5px 20px 10px;
+    width: 425px;
+}
+section.menu {
+    height: 125px;
+    width: 440px;
+}
+.menu-cont {
+    height: 125px;
+    width: 440px;
+}
+.menu-cont a {
+    font-size: 24px;
+    height: 125px;
+    padding: 44px 0 0;
+    width: 125px;
+}
+.menu-cont a img {
+    max-width: 125px;
+}
+.menu-cont a span {
+    height: 125px;
+    width: 125px;
+}
+.menu-cont a.about {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-orange.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+}
+.menu-cont a.resume {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-olive.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+    left: 105px;
+}
+.menu-cont a.portfolio {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-blue.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+    left: 210px;
+}
+.menu-cont a.contact {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-crimson.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+    left: 315px;
+}
+.block {
+    height: 200px;
+    padding: 0 10px 0 5px;
+    width: 415px;
+}
+.block-12 {
+    margin: 0 15px 0 0;
+    width: 197px;
+}
+.block-12.last {
+}
+.block h1 {
+    font-size: 22px;
+    line-height: 20px;
+    margin: 2px 2px 1px;
+}
+.block h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+.block p {
+    font-size: 12px;
+    margin: 0 0 7px;
+}
+a.close {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/bg-close.png");
+    background-origin: padding-box;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: -20px;
+    top: 12px;
+    width: 20px;
+    z-index: 999;
+}
+a.close img {
+    max-width: 20px !important;
+}
+.jspDrag {
+    border-radius: 7px 7px 7px 7px;
+    left: -2px;
+    width: 5px;
+}
+section#about img {
+    max-width: 100px;
+}
+.image-left {
+    float: left;
+    margin: 5px 10px 5px 0;
+}
+ul.info {
+    margin: 5px 0 0;
+    width: 197px;
+}
+ul.info li {
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0 0 4px;
+}
+ul.info li.where {
+    font-size: 10px;
+    margin: 0 0 4px;
+    padding: 0;
+    width: 134px;
+}
+ul.info li.where.progress {
+    margin: 0 0 3px;
+    padding: 0;
+    width: 54px;
+}
+ul.info li.where.progress span {
+    border-radius: 5px 5px 5px 5px;
+    font-size: 9px;
+    padding: 1px 0;
+}
+ul.info li.skills {
+    font-size: 12px;
+    margin: 0 0 4px;
+    padding: 0;
+    width: 99px;
+}
+ul.info li.skills.progress {
+    margin: 0 0 4px;
+    padding: 0;
+    width: 95px;
+}
+ul.info li.skills.progress span {
+    background-size: 8px 8px;
+}
+ul.info li.skills.progress span.p-100 {
+    width: 95px;
+}
+ul.info li.skills.progress span.p-70 {
+    width: 80px;
+}
+ul.info li.skills.progress span.p-50 {
+    width: 56px;
+}
+ul.info li.skills.progress span.p-30 {
+    width: 40px;
+}
+ul.info li.check {
+    background-size: 8px 8px;
+    padding: 0 0 0 15px;
+    width: 182px;
+}
+ul.portfolio {
+    margin: 10px 0 20px;
+    width: 415px;
+}
+ul.portfolio li {
+    height: 81px;
+    margin: 0 3px 3px 0;
+    width: 135px;
+}
+ul.portfolio li a {
+    height: 81px;
+    width: 135px;
+}
+ul.portfolio li a span {
+    font-size: 12px;
+    padding: 2px;
+    width: 131px;
+}
+ul.portfolio li a img {
+    width: 135px;
+}
+.theme-default #nivo {
+    height: 200px;
+    width: 415px;
+}
+.theme-default #nivo.nivoSlider {
+    background-size: 415px 200px;
+}
+.theme-default #nivo img {
+    height: 200px;
+    width: 415px;
+}
+.wrapper-block label {
+    font-size: 12px;
+    width: 55px;
+}
+.small-label {
+    font-size: 7px;
+    margin: 0 5px 10px 0;
+    width: 55px;
+}
+.wrapper-block [type="text"] {
+    font-size: 8px;
+    margin: 2px 0 2px 2px;
+    padding: 4px 2px;
+    width: 120px;
+}
+.wrapper-block textarea {
+    font-size: 8px;
+    margin: 2px 0 2px 2px;
+    padding: 4px 2px;
+    width: 120px;
+}
+a.btn-form, input.btn-form {
+    font-size: 8px;
+    margin: 5px 0 5px 57px;
+    padding: 2px 10px;
+    width: 60px;
+}
+ul.contact li a.vcard {
+    background-size: 24px 48px;
+    font-size: 12px;
+    height: 22px;
+    margin: 0 0 5px;
+    padding: 2px 0 0 30px;
+    width: 150px;
+}
+ul.contact li a.vcard:hover {
+    background-position: 0 -24px;
+}
+ul.contact li {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 3px;
+}
+ul.contact li span {
+    font-size: 12px;
+}
+footer {
+    height: 30px;
+    margin: 20px auto 0;
+    padding: 5px 0 0;
+    width: 440px;
+}
+.tweets {
+    background-size: 23px 17px;
+    font-size: 8px;
+    height: 26px;
+    line-height: 8px;
+    padding: 0 0 2px 30px;
+    width: 290px;
+}
+ul.socicon li {
+    margin: 0 2px 0 0;
+}
+ul.socicon li a {
+    height: 17px;
+    width: 17px;
+}
+ul.socicon li a.dribbble {
+    background-size: 17px 34px;
+}
+ul.socicon li a.facebook {
+    background-size: 17px 34px;
+}
+ul.socicon li a.twitter {
+    background-size: 17px 34px;
+}
+ul.socicon li a.flickr {
+    background-size: 17px 34px;
+}
+ul.socicon li a.linkedin {
+    background-size: 17px 34px;
+}
+ul.socicon li a.vimeo {
+    background-size: 17px 34px;
+}
+ul.socicon li a.google {
+    background-size: 17px 34px;
+}
+ul.socicon li a:hover {
+    background-position: 0 -17px;
+}
+
+header {
+    height: 20px;
+    margin: 0 auto 20px 10px;
+    width: 280px;
+}
+header h1 {
+    font-size: 16px;
+}
+header h5 {
+    font-size: 10px;
+}
+section {
+    height: 200px;
+    padding: 5px 5px 10px;
+    width: 280px;
+}
+section.menu {
+    height: 76px;
+    width: 280px;
+}
+.menu-cont {
+    height: 76px;
+    width: 280px;
+}
+.menu-cont a {
+    font-size: 16px;
+    height: 76px;
+    padding: 26px 0 0;
+    width: 76px;
+}
+.menu-cont a img {
+    max-width: 76px;
+}
+.menu-cont a span {
+    height: 76px;
+    width: 76px;
+}
+.menu-cont a.about {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-orange.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 76px 76px;
+}
+.menu-cont a.resume {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-olive.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 76px 76px;
+    left: 67px;
+}
+.menu-cont a.portfolio {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-blue.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 76px 76px;
+    left: 134px;
+}
+.menu-cont a.contact {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-crimson.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 76px 76px;
+    left: 201px;
+}
+.block {
+    height: 200px;
+    padding: 0 5px;
+    width: 270px;
+}
+.block-12 {
+    margin: 0 5px 0 0;
+    width: 130px;
+}
+.block-12.last {
+    margin: 0 0 20px;
+}
+.block h1 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 2px 2px 1px;
+}
+.block h3 {
+    font-size: 10px;
+    margin: 0 0 5px;
+}
+.block p {
+    font-size: 8px;
+    margin: 0 0 7px;
+}
+a.close {
+    background-size: 10px 20px;
+    height: 20px;
+    padding: 0;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    width: 10px;
+}
+a.close img {
+    height: 10px;
+    padding: 0;
+    width: 10px;
+}
+.jspVerticalBar {
+    width: 4px;
+}
+.jspDrag {
+    border-radius: 5px 5px 5px 5px;
+    left: -2px;
+    width: 5px;
+}
+section#about img {
+    max-width: 75px;
+}
+.image-left {
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+ul.info {
+    margin: 5px 0 0;
+    width: 130px;
+}
+ul.info li {
+    font-size: 6px;
+    line-height: 8px;
+    margin: 0 0 2px;
+}
+ul.info li.where {
+    font-size: 8px;
+    margin: 0 0 3px;
+    padding: 0;
+    width: 75px;
+}
+ul.info li.where.progress {
+    margin: 0 0 3px;
+    padding: 0;
+    width: 45px;
+}
+ul.info li.where.progress span {
+    border-radius: 4px 4px 4px 4px;
+    font-size: 7px;
+    padding: 1px 0;
+}
+ul.info li.skills {
+    font-size: 8px;
+    margin: 0 0 4px;
+    padding: 0;
+    width: 72px;
+}
+ul.info li.skills.progress {
+    margin: 0 0 4px;
+    padding: 0;
+    width: 55px;
+}
+ul.info li.skills.progress span {
+    background-size: 6px 6px;
+    height: 6px;
+}
+ul.info li.skills.progress span.p-100 {
+    width: 54px;
+}
+ul.info li.skills.progress span.p-70 {
+    width: 42px;
+}
+ul.info li.skills.progress span.p-50 {
+    width: 36px;
+}
+ul.info li.skills.progress span.p-30 {
+    width: 24px;
+}
+ul.info li.check {
+    background-size: 6px 6px;
+    padding: 0 0 0 10px;
+    width: 127px;
+}
+ul.portfolio {
+    margin: 10px 0 20px;
+    width: 270px;
+}
+ul.portfolio li {
+    height: 54px;
+    margin: 0 2px 2px 0;
+    width: 88px;
+}
+ul.portfolio li a {
+    height: 54px;
+    width: 88px;
+}
+ul.portfolio li a span {
+    font-size: 8px;
+    padding: 2px;
+    width: 84px;
+}
+ul.portfolio li a img {
+    width: 88px;
+}
+.theme-default #nivo {
+    height: 160px;
+    width: 270px;
+}
+.theme-default #nivo.nivoSlider {
+    background-size: 270px 160px;
+}
+.theme-default #nivo img {
+    height: 160px;
+    width: 270px;
+}
+.wrapper-block label {
+    font-size: 8px;
+    width: 35px;
+}
+.small-label {
+    font-size: 6px;
+    margin: 0 3px 7px 0;
+    width: 35px;
+}
+.wrapper-block [type="text"] {
+    font-size: 6px;
+    margin: 0 0 1px 1px;
+    padding: 2px 1px;
+    width: 80px;
+}
+.wrapper-block textarea {
+    font-size: 6px;
+    margin: 0 0 1px 1px;
+    padding: 2px 1px;
+    width: 80px;
+}
+a.btn-form, input.btn-form {
+    font-size: 6px;
+    margin: 3px 0 3px 37px;
+    padding: 2px 10px;
+    width: 40px;
+}
+ul.contact li a.vcard {
+    background-size: 16px 32px;
+    font-size: 8px;
+    height: 14px;
+    margin: 0 0 5px;
+    padding: 2px 0 0 20px;
+    width: 150px;
+}
+ul.contact li a.vcard:hover {
+    background-position: 0 -16px;
+}
+ul.contact li {
+    font-size: 8px;
+    line-height: 10px;
+    margin: 0 0 3px;
+}
+ul.contact li span {
+    font-size: 8px;
+}
+footer {
+    height: 30px;
+    margin: 16px auto 0;
+    padding: 5px 0 0;
+    width: 280px;
+}
+.tweets {
+    background-size: 20px 14px;
+    font-size: 6px;
+    height: 24px;
+    line-height: 6px;
+    padding: 0 0 2px 24px;
+    width: 178px;
+}
+ul.socicon li {
+    margin: 0 1px 0 0;
+}
+ul.socicon li a {
+    height: 12px;
+    width: 12px;
+}
+ul.socicon li a.dribbble {
+    background-size: 12px 24px;
+}
+ul.socicon li a.facebook {
+    background-size: 12px 24px;
+}
+ul.socicon li a.twitter {
+    background-size: 12px 24px;
+}
+ul.socicon li a.flickr {
+    background-size: 12px 24px;
+}
+ul.socicon li a.linkedin {
+    background-size: 12px 24px;
+}
+ul.socicon li a.vimeo {
+    background-size: 12px 24px;
+}
+ul.socicon li a.google {
+    background-size: 12px 24px;
+}
+ul.socicon li a:hover {
+    background-position: 0 -12px;
+}
+
+header {
+    height: 30px;
+    margin: 0 auto 40px 10px;
+    width: 560px;
+}
+header h1 {
+    font-size: 28px;
+}
+header h5 {
+    font-size: 16px;
+}
+section {
+    height: 280px;
+    padding: 10px 10px 20px;
+    width: 540px;
+}
+section.menu {
+    height: 180px;
+    width: 560px;
+}
+.menu-cont {
+    height: 180px;
+    width: 560px;
+}
+.menu-cont a {
+    font-size: 24px;
+    height: 155px;
+    padding: 60px 0 0;
+    width: 155px;
+}
+.menu-cont a img {
+    max-width: 155px;
+}
+.menu-cont a span {
+    height: 155px;
+    width: 155px;
+}
+.menu-cont a.about {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-orange.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 155px 155px;
+}
+.menu-cont a.resume {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-olive.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 155px 155px;
+    left: 135px;
+}
+.menu-cont a.portfolio {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-blue.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 155px 155px;
+    left: 270px;
+}
+.menu-cont a.contact {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/a-crimson.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 155px 155px;
+    left: 405px;
+}
+.block {
+    height: 280px;
+    padding: 0 10px;
+    width: 520px;
+}
+.block-12 {
+    margin: 0 10px 0 0;
+    width: 250px;
+}
+.block-12.last {
+    margin: 0 0 20px;
+}
+.block h1 {
+    font-size: 25px;
+    line-height: 28px;
+    margin: 2px 2px 1px;
+}
+.block h3 {
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+.block p {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+a.close {
+    background-size: 20px 20px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    width: 20px;
+}
+a.close img {
+    height: 20px;
+    padding: 0;
+    width: 20px;
+}
+.jspVerticalBar {
+    width: 4px;
+}
+.jspDrag {
+    border-radius: 5px 5px 5px 5px;
+    left: -2px;
+    width: 5px;
+}
+section#about img {
+    max-width: 115px;
+}
+.image-left {
+    float: left;
+    margin: 5px 10px 5px 0;
+}
+ul.info {
+    margin: 5px 0 0;
+    width: 250px;
+}
+ul.info li {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 3px;
+}
+ul.info li.where {
+    font-size: 14px;
+    margin: 0 0 6px;
+    padding: 0;
+    width: 145px;
+}
+ul.info li.where.progress {
+    margin: 0 0 3px;
+    padding: 0;
+    width: 95px;
+}
+ul.info li.where.progress span {
+    border-radius: 3px 3px 3px 3px;
+    font-size: 10px;
+    padding: 1px 0;
+}
+ul.info li.skills {
+    font-size: 14px;
+    margin: 0 0 4px;
+    padding: 0;
+    width: 145px;
+}
+ul.info li.skills.progress {
+    margin: 0 0 4px;
+    padding: 0;
+    width: 95px;
+}
+ul.info li.skills.progress span {
+    background-size: 10px 10px;
+    height: 10px;
+}
+ul.info li.skills.progress span.p-100 {
+    width: 90px;
+}
+ul.info li.skills.progress span.p-70 {
+    width: 70px;
+}
+ul.info li.skills.progress span.p-50 {
+    width: 60px;
+}
+ul.info li.skills.progress span.p-30 {
+    width: 40px;
+}
+ul.info li.check {
+    background-size: 10px 10px;
+    padding: 0 0 0 15px;
+    width: 250px;
+}
+ul.portfolio {
+    margin: 10px 0 20px;
+    width: 515px;
+}
+ul.portfolio li {
+    height: 103px;
+    margin: 0 5px 5px 0;
+    width: 168px;
+}
+ul.portfolio li a {
+    height: 103px;
+    width: 168px;
+}
+ul.portfolio li a span {
+    font-size: 12px;
+    padding: 4px;
+    width: 160px;
+}
+ul.portfolio li a img {
+    width: 168px;
+}
+.theme-default #nivo {
+    height: 200px;
+    width: 515px;
+}
+.theme-default #nivo.nivoSlider {
+    background-size: 515px 200px;
+}
+.theme-default #nivo img {
+    height: 200px;
+    width: 515px;
+}
+.wrapper-block label {
+    font-size: 16px;
+    width: 80px;
+}
+.small-label {
+    font-size: 12px;
+    margin: 0 5px 7px 0;
+    width: 80px;
+}
+.wrapper-block [type="text"] {
+    font-size: 12px;
+    margin: 0 0 2px 2px;
+    padding: 3px;
+    width: 130px;
+}
+.wrapper-block textarea {
+    font-size: 12px;
+    margin: 0 0 2px 2px;
+    padding: 3px;
+    width: 130px;
+}
+a.btn-form, input.btn-form {
+    font-size: 12px;
+    margin: 20px 0 3px 85px;
+    padding: 2px 10px;
+    width: 80px;
+}
+ul.contact li a.vcard {
+    background-size: 36px 72px;
+    font-size: 16px;
+    height: 27px;
+    margin: 0 0 5px;
+    padding: 9px 0 0 40px;
+    width: 250px;
+}
+ul.contact li a.vcard:hover {
+    background-position: 0 -36px;
+}
+ul.contact li {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 3px;
+}
+ul.contact li span {
+    font-size: 14px;
+}
+footer {
+    height: 60px;
+    margin: 30px auto 0;
+    padding: 5px 0 0;
+    width: 560px;
+}
+.tweets {
+    background-size: 40px 28px;
+    font-size: 12px;
+    height: 50px;
+    line-height: 12px;
+    padding: 0 0 2px 50px;
+    width: 350px;
+}
+ul.socicon li {
+    margin: 0 2px 0 0;
+}
+ul.socicon li a {
+    height: 24px;
+    width: 24px;
+}
+ul.socicon li a.dribbble {
+    background-size: 24px 48px;
+}
+ul.socicon li a.facebook {
+    background-size: 24px 48px;
+}
+ul.socicon li a.twitter {
+    background-size: 24px 48px;
+}
+ul.socicon li a.flickr {
+    background-size: 24px 48px;
+}
+ul.socicon li a.linkedin {
+    background-size: 24px 48px;
+}
+ul.socicon li a.vimeo {
+    background-size: 24px 48px;
+}
+ul.socicon li a.google {
+    background-size: 24px 48px;
+}
+ul.socicon li a:hover {
+    background-position: 0 -24px;
+}

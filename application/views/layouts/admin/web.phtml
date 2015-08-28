@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+        <title>Administration | Exozet</title>
+
+        <!-- Core Stylesheet -->
+        <link href="/css/core.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+        <!--<link rel="alternate stylesheet" type="text/css" href="/css/red.css" title="styles2" media="screen" />-->
+        <link rel="stylesheet" type="text/css" href="/css/blue.css" title="styles3" media="screen" />
+
+        <!-- Javascript Files -->
+        <script type="text/javascript" src="/js/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="/js/hoverIntent.js"></script>
+        <script type="text/javascript" src="/js/superfish.js"></script>
+        <script type="text/javascript" src="/js/jquery.wysiwyg.js"></script>
+        <script type="text/javascript" src="/js/jquery-stylesheetToggle.js"></script>
+        <script type="text/javascript" src="/js/forestcp.js"></script>
+
+
+        <!--[if IE 6]>
+        <link href="/css/ie6.css" media="screen" rel="stylesheet" type="text/css" />
+        <script src="/js/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script>
+          /* EXAMPLE */
+          DD_belatedPNG.fix('.logo img, .message, table img');
+
+          /* string argument can be any CSS selector */
+        </script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <!-- Dialogs -->
+        <div id="welcome" style="display: none" title="Welcome to ForestCP">
+            <p></p>
+        </div>
+
+
+        <!-- Start Header -->
+        <div id="header">
+
+            <!-- Start Logo -->
+            <div class="logo">
+    
+            
+   
+            </div>
+            <!-- End Logo -->
+
+            <!-- Start Info -->
+            <div class="info">
+                <div>
+                    <h2>Exozet test <span></span></h2>
+                    <?php if(Zend_Auth::getInstance()->hasIdentity()): ?>
+                     <h2>Welcome back <span><?=Zend_Auth::getInstance()->getIdentity();?></span></h2>
+                    <small><a href="/index/logout">Logout</a> </small>
+                    <?php else: ?>
+                    <small><a href="/index/login">Log in</a> </small>
+                    <?php endif; ?>
+                </div>
+            </div>
+            
+
+
+
+            </div>
+            <!-- End Info -->
+            
+            <!-- End Info -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Start Top Navigation -->
+        <div id="top_nav">
+            <!-- Start Drop Down Menu -->
+            <ul class="sf-menu">
+                <li>
+                    <a class="m" href="#">Articles</a>
+                    <ul>
+                        <li>
+                            <a href="/index/add">Add Article</a>
+                        </li>
+                    </ul>
+
+                </li>
+               
+               
+              
+            </ul>
+            <!-- End Drop Down Menu -->
+        </div>
+        <!-- End Top Navigation -->
+
+        <!-- Start Wrap -->
+        <div id="wrap">
+            <div id="content">
+            
+
+            
+           <div class="inner">
+       <?=$this->layout()->content?>
+                  
+            </div>
+
+          
+
+                <!-- Start Sidebar Box #2 -->
+                <!--       <div class="sort">
+                         <div class="title"><h3>To Do List</h3></div>
+                         <div class="box">
+                           <div class="txt">
+                             <ul class="todo">
+                               <li>
+                                 <a href="#"><b>View Pending Comments</b></a>
+                                 <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+					    			Vivamus tellus metus, mattis eget pharetra eu, consectetur sed orci.</p>
+
+                                 <ul class="links">
+                                   <li><a href="#">Get Started</a></li>
+                                   <li><a href="#">Mark As Done</a></li>
+                                 </ul>
+                               </li>
+
+                               <li>
+                                 <a href="#"><b>View Pending Comments</b></a>
+                                 <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.
+					    			Vivamus tellus metus, mattis eget pharetra eu, consectetur sed orci.</p>
+
+                                 <ul class="links">
+                                   <li><a href="#">Get Started</a></li>
+                                   <li><a href="#">Mark As Done</a></li>
+                                 </ul>
+                               </li>
+                             </ul>
+                           </div>
+                         </div>
+                       </div>-->
+                <!-- End Sidebar Box #2 -->
+
+                <!-- Start Sidebar #3 -->
+                <!--        <div class="sort">
+                          <div class="title"><h3>Calendar</h3></div>
+                          <div class="box">
+                            <div class="txt">
+                              <div id="datepicker"></div>
+                            </div>
+                          </div>
+                        </div>-->
+                <!-- End Sidebar Box #3 -->
+
+            </div>
+            <!-- End Sidebar -->
+
+        </div>
+        <!-- End Wrap -->
+    </body>
+</html>

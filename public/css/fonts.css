@@ -1,0 +1,19 @@
+@charset "utf-8";
+@font-face {
+    font-family: "QlassikBoldRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../css/fonts/QlassikBold_TB-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/QlassikBold_TB-webfont.woff") format("woff"), url("../css/fonts/QlassikBold_TB-webfont.ttf") format("truetype"), url("../css/fonts/QlassikBold_TB-webfont.svg#QlassikBoldRegular") format("svg");
+}
+@font-face {
+    font-family: "QlassikBoldRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../css/fonts/QlassikBold_TB-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/QlassikBold_TB-webfont.woff") format("woff"), url("../css/fonts/QlassikBold_TB-webfont.ttf") format("truetype"), url("../css/fonts/QlassikBold_TB-webfont.svg#QlassikBoldRegular") format("svg");
+}
+@font-face {
+    font-family: "YanoneKaffeesatzLight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../css/fonts/YanoneKaffeesatz-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fonts/YanoneKaffeesatz-Light-webfont.woff") format("woff"), url("../css/fonts/YanoneKaffeesatz-Light-webfont.ttf") format("truetype"), url("../css/fonts/YanoneKaffeesatz-Light-webfont.svg#YanoneKaffeesatzLight") format("svg");
+}

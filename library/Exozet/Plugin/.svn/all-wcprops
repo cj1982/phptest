@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/repo/!svn/ver/11464/v2/trunk/library/Nexva/Plugin
+END
+NavigationPbo.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/repo/!svn/ver/11459/v2/trunk/library/Nexva/Plugin/NavigationPbo.php
+END
+AuthCheck.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repo/!svn/ver/9059/v2/trunk/library/Nexva/Plugin/AuthCheck.php
+END
+AclPbo.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repo/!svn/ver/11464/v2/trunk/library/Nexva/Plugin/AclPbo.php
+END

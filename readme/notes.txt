@@ -1,11 +1,11 @@
 How to run the demo code. Test was done using Zend 
 
-1. Create a vertual host as follow.
+1. Create a vertual host as follow. 
 
 <VirtualHost *:80>
     ServerName exozet
-    DocumentRoot /var/www/projects/exozet/public
- <Directory /var/www/projects/exozet/public>
+    DocumentRoot /var/www/projects/exozet/public # point to your directory 
+ <Directory /var/www/projects/exozet/public> # point to your directory 
         DirectoryIndex index.php
         AllowOverride All
         Order allow,deny

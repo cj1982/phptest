@@ -28,6 +28,6 @@ resources.multidb.default.dbname        = "exozet"
 resources.multidb.default.default       = true
 
 
-5. open browser and type the url - http://exozet
+5. open browser and type the url - http://exozet. test username  admin- password- abc123
 
 6. make sure you have given proper apache folder permission before you run it.
